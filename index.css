@@ -103,7 +103,9 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
-
+ .outLucro, .outSaldo {
+    display: none;
+  }
   .none{
 display: block;
 }
