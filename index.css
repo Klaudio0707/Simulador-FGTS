@@ -192,13 +192,15 @@ from{
   }
   
   .outLucro {
-    color: #78f195;
+    color: #05fa3e;
     border-color: #C3D9F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .outSaldo {
     color: #14c8ff;
     border-color: deepskyblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   /* Ocultar elementos inicialmente */
