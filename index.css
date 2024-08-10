@@ -1,0 +1,244 @@
+/* Reset básico
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #141212;
+    line-height: 1.6;
+    overflow: hidden;
+
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+header {
+    background-color: #7a9bbe;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+ 
+    margin: 2rem auto;
+    padding: 5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type="number"] {
+    --background: white; 
+    background-color: var(--background);
+}
+
+input[type="button"],
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"],
+input[type="submit"] ::hover {
+    background-color: #115fb3;
+}
+
+.outLucro{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+.outSaldo{
+    
+    font-size: 1.2rem;
+    color: #2889a7;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+#none{
+display: none;
+}
+#block{
+display: block;
+}
+
+@keyframes valueShow{
+from{
+    top: 100%;
+    opacity: 0;
+}
+}
+
+.outLucro, .outSaldo{
+    animation: valueShow 0,10s ease-in-out;
+} */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    
+    line-height: 1.6;
+    font-size: 1rem;
+    /* padding: 1rem; */
+    position: relative;
+    background: linear-gradient(142deg, #0A6CB5, #1E7AA5, #2E8596, #439284, #58A070, #6FB15A, #7EBB4C   );
+    height: 100vh;
+    }
+    
+  
+  
+
+  
+  header {
+    top: 0;
+    position:relative;
+    left: 0;
+    width: 100%;
+    
+    background-color: #0561A6;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 5rem;
+    background-color: #C3D9F3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="submit"],
+  input[type="button"] {
+    padding: 0.50rem;
+    font-size: 1rem;
+    border: 1px solid #ebebde;
+    border-radius: 5px;
+  }
+  
+  input[type="button"],
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: #DB6E00;
+    color: #fffdff;
+    border: none;
+   border-color: #171D2F;
+   border-width: 0.1px 0.1px 0.1px 0.1px;;
+   border-style: solid;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    background-color: #1094E7;
+    color: #FFFFFE;
+    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .outLucro, .outSaldo {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .outLucro {
+    color: #78f195;
+    border-color: #C3D9F3;
+  }
+  
+  .outSaldo {
+    color: #14c8ff;
+    border-color: deepskyblue;
+  }
+  
+  /* Ocultar elementos inicialmente */
+  .outLucro, .outSaldo {
+    display: none;
+  }
+  .none{
+display: block;
+}
+  /* Animação (corrigida) */
+  @keyframes valueShow {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Adiciona um efeito de deslocamento */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Aplicar animação */
+  .outLucro, .outSaldo {
+    animation: valueShow 0.5s ease-in-out;
+  }
+  
+  
+  
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Media query para telas menores */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    .navbar {
+      flex-direction: column;
+    }
+  }
