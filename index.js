@@ -35,6 +35,7 @@ respSaldo.style.display="block";
 
 }
 frm.reset()
+frm.inValue.focus();
 
 
 });
