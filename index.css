@@ -14,6 +14,44 @@
     background: linear-gradient(142deg, #0A6CB5, #1E7AA5, #2E8596, #439284, #58A070, #6FB15A, #7EBB4C   );
     height: 100vh;
     }
+
+nav{
+text-align: center;
+margin-top: 2%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav a{
+color: #F9FBFC;
+text-decoration: none;
+padding: 0px 50px 10px 0;
+font-size: 1.2rem;
+position: relative;
+}
+
+nav a::after{
+content: " ";
+width: 0%;
+height: 2px;
+background-color: #fa6909;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 0.5s ease-in-out;
+
+}
+nav a:hover::after{
+width: 100%;
+
+}
+
+
+
+
+
+
+
+
     
   
   
@@ -87,11 +125,6 @@
   }
   
   .outLucro {
-    color: #78f195;
-    border-color: #C3D9F3;
-  }
-  
- .outLucro {
     color: #05fa3e;
     border-color: #C3D9F3;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -102,8 +135,9 @@
     border-color: deepskyblue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
-
- .outLucro, .outSaldo {
+  
+  /* Ocultar elementos inicialmente */
+  .outLucro, .outSaldo {
     display: none;
   }
   .none{
