@@ -11,8 +11,10 @@
     font-size: 1rem;
     /* padding: 1rem; */
     position: relative;
-    background: linear-gradient(142deg, #0A6CB5, #1E7AA5, #2E8596, #439284, #58A070, #6FB15A, #7EBB4C   );
-    height: 100vh;
+    background: linear-gradient(142deg, #0A6CB5, #1E7AA5, #2E8596, #439284, #58A070, #6FB15A, #7EBB4C   ) no-repeat;
+    background: contain;
+    height: 140vh;
+
     }
 
 nav{
@@ -122,6 +124,7 @@ width: 100%;
     font-weight: bold;
     text-align: center;
     align-items: center;
+    background-color: transparent;
   }
   
   .outLucro {
@@ -175,5 +178,12 @@ display: block;
     }
     .navbar {
       flex-direction: column;
+     
+    }
+    nav a {
+font-size: small;
+flex-direction: column;
+text-align: center;
+
     }
   }
