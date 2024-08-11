@@ -131,8 +131,8 @@ width: 100%;
   }
   
   .outSaldo {
-    color: #14c8ff;
-    border-color: deepskyblue;
+    color: #0044ff;
+    border-color: rgb(2, 2, 2);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   
