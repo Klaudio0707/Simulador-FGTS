@@ -1,108 +1,3 @@
-/* Reset básico
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #141212;
-    line-height: 1.6;
-    overflow: hidden;
-
-    font-size: 1rem;
-    padding: 1rem;
-}
-
-header {
-    background-color: #7a9bbe;
-    color: white;
-    padding: 3rem;
-    text-align: center;
-}
-
-main {
-    max-width: 600px;
- 
-    margin: 2rem auto;
-    padding: 5rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-input[type="text"],
-input[type="submit"],
-input[type="button"] {
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-input[type="number"] {
-    --background: white; 
-    background-color: var(--background);
-}
-
-input[type="button"],
-input[type="submit"] {
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-input[type="button"],
-input[type="submit"] ::hover {
-    background-color: #115fb3;
-}
-
-.outLucro{
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    color: #28a745;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-}
-.outSaldo{
-    
-    font-size: 1.2rem;
-    color: #2889a7;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-}
-
-#none{
-display: none;
-}
-#block{
-display: block;
-}
-
-@keyframes valueShow{
-from{
-    top: 100%;
-    opacity: 0;
-}
-}
-
-.outLucro, .outSaldo{
-    animation: valueShow 0,10s ease-in-out;
-} */
-
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -119,6 +14,44 @@ from{
     background: linear-gradient(142deg, #0A6CB5, #1E7AA5, #2E8596, #439284, #58A070, #6FB15A, #7EBB4C   );
     height: 100vh;
     }
+
+nav{
+text-align: center;
+margin-top: 2%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav a{
+color: #F9FBFC;
+text-decoration: none;
+padding: 0px 50px 10px 0;
+font-size: 1.2rem;
+position: relative;
+}
+
+nav a::after{
+content: " ";
+width: 0%;
+height: 2px;
+background-color: #fa6909;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 0.5s ease-in-out;
+
+}
+nav a:hover::after{
+width: 100%;
+
+}
+
+
+
+
+
+
+
+
     
   
   
