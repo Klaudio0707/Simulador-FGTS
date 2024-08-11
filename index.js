@@ -26,7 +26,7 @@ const saldoForm = saldo.toLocaleString('pt-BR', {minimumFractionDigits: 2, maxim
 const lucroForm = lucro.toFixed(2).replace('.',',');
 
 
-respLucro.innerText=`Lucro a Receber:\nR$ ${lucroForm}`
+respLucro.innerText=`Seu Possível Lucro a Receber:\nR$ ${lucroForm}`
 respSaldo.innerText=`Saldo do FGTS:\nR$ ${saldoForm}`;
 respLucro.style.display="block";
 respSaldo.style.display="block";
