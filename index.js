@@ -23,7 +23,7 @@ saldo = Number(saldo);
 lucro = saldo*0.02693258;
 
 const saldoForm = saldo.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
-const lucroForm = lucro.toFixed(3).replace('.',',');
+const lucroForm = lucro.toFixed(2).replace('.',',');
 
 
 respLucro.innerText=`Lucro a Receber:\nR$ ${lucroForm}`
