@@ -6,7 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    
+    overflow: hidden;
 
     font-size: 1rem;
     /* padding: 1rem; */
@@ -67,14 +67,14 @@ width: 100%;
     
     background-color: #0561A6;
     color: #ffffff;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
   }
   
   main {
     max-width: 600px;
     margin: 2rem auto;
-    padding: 5rem;
+    padding: 3rem;
     background-color: #C3D9F3;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
